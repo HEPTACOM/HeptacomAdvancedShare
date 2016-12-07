@@ -7,9 +7,15 @@
 			<a href="#" data-type="twitter" class="csbuttons btn">
 				<span class="icon--twitter"></span>
 			</a>
-			<a href="#" data-type="google" class="csbuttons btn">
-				<span class="icon--googleplus"></span>
-			</a>
+            <a href="#" data-type="google" class="csbuttons btn">
+                <span class="icon--googleplus"></span>
+            </a>
+            <a href="#" data-type="linkedin" class="csbuttons btn">
+                <span class="icon--linkedin"></span>
+            </a>
+            <a href="#" data-type="pinterest" class="csbuttons btn">
+                <span class="icon--pinterest"></span>
+            </a>
 		</div>
 		<div class="advanced-share--inner-wrap">
 			{$smarty.block.parent}
