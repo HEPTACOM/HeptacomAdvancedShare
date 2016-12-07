@@ -1,5 +1,6 @@
 .advanced-share--outer-wrap {
   background: #b5b5b5;
+  .unitize-min-width(320);
 
   .advanced-share--inner-wrap {
     background: @body-bg;
@@ -10,16 +11,25 @@
   .advanced-share--icon-container {
     box-sizing: content-box;
     text-align: center;
-    .unitize-padding(60, 0);
+    .unitize-padding(20, 0);
     .unitize-height(40);
-    .unitize(margin-top, -160);
+    .unitize(margin-top, -80);
     transition: all .3s ease;
 
+    @media (min-width: @phoneLandscapeViewportWidth) {
+      .unitize-padding(60, 0);
+      .unitize(margin-top, -160);
+    }
+
     .btn {
-      .unitize-margin(0, 20);
       @box-shadow-dimensions: 0 0 50px -5px;
       .box-shadow(@box-shadow-dimensions #000);
       color: #ffffff;
+      .unitize-margin(0, 8);
+
+      @media (min-width: @phoneLandscapeViewportWidth) {
+        .unitize-margin(0, 20);
+      }
 
       [class^="icon--"],
       [class*=" icon--"] {
