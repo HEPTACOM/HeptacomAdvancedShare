@@ -25,9 +25,9 @@
 
 {block name='frontend_index_search' append}
 	<li class="navigation--entry entry--share" role="menuitem">
-		<span class="advanced-share--toggle-btn btn">
+		<a href="#" class="advanced-share--toggle-btn btn"  rel="nofollow" title="{"{s name='DetailAdvancedShare' namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}Teilen{/s}"|escape}">
 			<i class="icon--share"></i>
-		</span>
+		</a>
 	</li>
 {/block}
 
@@ -38,4 +38,10 @@
             <span class="entry--menu-text">{s namespace='frontend/index/menu_left' name="IndexLinkMenu"}{/s}</span>
         </a>
     </li>
+{/block}
+
+{block name='frontend_detail_actions_review' append}
+    <a href="#" class="action--link advanced-share--toggle-btn" rel="nofollow" title="{"{s name='DetailAdvancedShare' namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}{/s}"|escape}">
+        <i class="icon--share"></i> {s name="DetailAdvancedShare" namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}{/s}
+    </a>
 {/block}
