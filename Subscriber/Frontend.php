@@ -70,14 +70,10 @@ class Frontend implements SubscriberInterface
     {
         return new ArrayCollection([
             implode(DIRECTORY_SEPARATOR, [
-                __DIR__,
-                '..',
-                'Views',
-                'frontend',
-                '_public',
-                'src',
-                'js',
-                'jquery.advanced-share.js'
+                __DIR__, '..', 'Views', 'frontend', '_public', 'vendors', 'js', 'jquery.csbuttons', 'jquery.csbuttons.js'
+            ]),
+            implode(DIRECTORY_SEPARATOR, [
+                __DIR__, '..', 'Views', 'frontend', '_public', 'src', 'js', 'jquery.advanced-share.js'
             ])
         ]);
     }

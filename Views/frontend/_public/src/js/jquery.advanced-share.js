@@ -10,5 +10,6 @@
 	});
 
 	window.StateManager.addPlugin('.advanced-share--outer-wrap', 'heptacomAdvancedShare');
+    $('.csbuttons').cSButtons();
 	
 })(jQuery, window);
