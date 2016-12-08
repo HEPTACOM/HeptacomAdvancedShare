@@ -48,6 +48,19 @@ class Frontend implements SubscriberInterface
      */
     public function addLessFiles(Enlight_Event_EventArgs $args)
     {
+        $vendorFontAwesome = new LessDefinition([], [implode(DIRECTORY_SEPARATOR, [
+            __DIR__,
+            '..',
+            'Views',
+            'frontend',
+            '_public',
+            'vendors',
+            'less',
+            'Font-Awesome',
+            'less',
+            'font-awesome.less'
+        ])], __DIR__);
+
         $less = new LessDefinition([], [implode(DIRECTORY_SEPARATOR, [
             __DIR__,
             '..',
@@ -59,7 +72,7 @@ class Frontend implements SubscriberInterface
             'all.less'
         ])], __DIR__);
 
-        return new ArrayCollection([$less]);
+        return new ArrayCollection([$vendorFontAwesome, $less]);
     }
 
     /**
