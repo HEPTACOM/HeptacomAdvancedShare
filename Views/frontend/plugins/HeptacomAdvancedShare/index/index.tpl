@@ -22,7 +22,7 @@
                 <span class="fa fa-pinterest-p"></span>
             </a>
             <a href="#" data-type="whatsapp" rel="nofollow" class="btn"
-                title="{s name='ButtonWhatsapp' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Whatsapp{/s}">
+                title="{s name='ButtonWhatsApp' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}WhatsApp{/s}">
                 <span class="fa fa-whatsapp"></span>
             </a>
             <a href="#" data-type="email" rel="nofollow" class="btn"
