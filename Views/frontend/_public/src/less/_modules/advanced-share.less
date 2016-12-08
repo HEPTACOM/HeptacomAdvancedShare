@@ -6,6 +6,11 @@
     background: @body-bg;
     overflow: hidden;
     transition: all .3s ease;
+    transform: translateY(-80px);
+
+    @media (min-width: @phoneLandscapeViewportWidth) {
+      transform: translateY(-160px);
+    }
   }
 
   .advanced-share--icon-container {
@@ -15,12 +20,12 @@
     white-space: nowrap;
     .unitize-padding(20, 0);
     .unitize-height(40);
-    .unitize(margin-top, -80);
+    transform: translateY(-80px);
     transition: all .3s ease;
 
     @media (min-width: @phoneLandscapeViewportWidth) {
       .unitize-padding(60, 0);
-      .unitize(margin-top, -160);
+      transform: translateY(-160px);
     }
 
     .btn {
@@ -88,11 +93,12 @@
 
   &.active {
     .advanced-share--icon-container {
-      margin-top: 0;
+      transform: translateY(0);
     }
 
     .advanced-share--inner-wrap {
       .unitize-margin(0, 0, 0);
+      transform: translateY(0);
       .box-shadow(0 0 100px -20px #000);
 
       @media (min-width: @phoneLandscapeViewportWidth) {
