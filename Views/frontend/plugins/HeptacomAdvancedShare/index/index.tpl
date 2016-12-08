@@ -2,19 +2,25 @@
 	<div class="advanced-share--outer-wrap">
 		<div class="advanced-share--icon-container">
 			<a href="#" data-type="facebook" class="csbuttons btn">
-				<span class="icon--facebook"></span>
+				<span class="fa fa-facebook"></span>
 			</a>
 			<a href="#" data-type="twitter" class="csbuttons btn">
-				<span class="icon--twitter"></span>
+				<span class="fa fa-twitter"></span>
 			</a>
             <a href="#" data-type="google" class="csbuttons btn">
-                <span class="icon--googleplus"></span>
+                <span class="fa fa-google-plus"></span>
             </a>
             <a href="#" data-type="linkedin" class="csbuttons btn">
-                <span class="icon--linkedin"></span>
+                <span class="fa fa-linkedin"></span>
             </a>
             <a href="#" data-type="pinterest" class="csbuttons btn">
-                <span class="icon--pinterest"></span>
+                <span class="fa fa-pinterest-p"></span>
+            </a>
+            <a href="#" data-type="whatsapp" class="btn">
+                <span class="fa fa-whatsapp"></span>
+            </a>
+            <a href="#" data-type="email" class="btn">
+                <span class="fa fa-envelope-o"></span>
             </a>
 		</div>
 		<div class="advanced-share--inner-wrap">
@@ -26,7 +32,7 @@
 {block name='frontend_index_search' append}
 	<li class="navigation--entry entry--share" role="menuitem">
 		<a href="#" class="advanced-share--toggle-btn btn"  rel="nofollow" title="{"{s name='DetailAdvancedShare' namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}Teilen{/s}"|escape}">
-			<i class="icon--share"></i>
+			<i class="fa fa-share-alt"></i>
 		</a>
 	</li>
 {/block}
@@ -42,6 +48,6 @@
 
 {block name='frontend_detail_actions_review' append}
     <a href="#" class="action--link advanced-share--toggle-btn" rel="nofollow" title="{"{s name='DetailAdvancedShare' namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}{/s}"|escape}">
-        <i class="icon--share"></i> {s name="DetailAdvancedShare" namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}{/s}
+        <i class="fa fa-share-alt"></i> {s name="DetailAdvancedShare" namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}{/s}
     </a>
 {/block}
