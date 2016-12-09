@@ -6,6 +6,7 @@
     background: @body-bg;
     overflow: hidden;
     transition: all .3s ease;
+    transform-origin: center top;
     transform: translateY(-80px);
 
     @media (min-width: @phoneLandscapeViewportWidth) {
@@ -97,21 +98,11 @@
     }
 
     .advanced-share--inner-wrap {
-      .unitize-margin(0, 0, 0);
       transform: translateY(0);
       .box-shadow(0 0 100px -20px #000);
 
-      @media (min-width: @phoneLandscapeViewportWidth) {
-        .unitize-margin(0, 0, 0);
-      }
       @media (min-width: @tabletViewportWidth) {
-        .unitize-margin(0, 40, 40);
-      }
-      @media (min-width: @tabletLandscapeViewportWidth) {
-        .unitize-margin(0, 80, 80);
-      }
-      @media (min-width: @desktopViewportWidth) {
-        .unitize-margin(0, 140, 80);
+        transform: scale(.9) translateY(0);
       }
     }
 
