@@ -5,12 +5,14 @@
   .advanced-share--inner-wrap {
     background: @body-bg;
     overflow: hidden;
-    transition: all .4s ease;
+    transition: transform .4s ease;
     transform-origin: center top;
     transform: translateY(-80px);
+    .unitize(margin-bottom, -80);
 
     @media (min-width: @phoneLandscapeViewportWidth) {
       transform: translateY(-160px);
+      .unitize(margin-bottom, -160);
     }
   }
 
@@ -22,7 +24,7 @@
     .unitize-padding(20, 0);
     .unitize-height(40);
     transform: translateY(-80px);
-    transition: all .4s ease;
+    transition: transform .4s ease;
 
     @media (min-width: @phoneLandscapeViewportWidth) {
       .unitize-padding(60, 0);
@@ -99,27 +101,21 @@
 
     .advanced-share--inner-wrap {
       transform: translateY(0);
+      margin-bottom: 0;
       .box-shadow(0 0 100px -20px #000);
 
       @media (min-width: @tabletViewportWidth) {
         transform: scale(.9) translateY(0);
+        .unitize(margin-bottom, -220);
       }
-    }
-
-    .navigation-main .navigation--list {
-      .unitize-padding(0, 10);
-    }
-
-    .shop--navigation .entry--cart {
-      .unitize(margin-right, 12);
-    }
-
-    .header-main .top-bar--navigation .navigation--entry:last-child {
-      .unitize(padding-right, 15);
-    }
-
-    .footer-main .footer--columns {
-      .unitize-padding(0, 30, 20);
+      @media (min-width: @tabletLandscapeViewportWidth) {
+        transform: scale(.8) translateY(0);
+        .unitize(margin-bottom, -380);
+      }
+      @media (min-width: @desktopViewportWidth) {
+        transform: scale(.7) translateY(0);
+        .unitize(margin-bottom, -600);
+      }
     }
   }
 }
