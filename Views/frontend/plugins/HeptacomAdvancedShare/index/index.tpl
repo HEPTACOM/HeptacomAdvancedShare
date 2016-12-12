@@ -1,38 +1,38 @@
+{block name="frontend_index_body_classes" append} advanced-share--outer-wrap{/block}
+
 {block name="frontend_index_page_wrap"}
-	<div class="advanced-share--outer-wrap">
-		<div class="advanced-share--icon-container">
-			<a href="#" data-type="facebook" rel="nofollow" class="csbuttons btn"
-                title="{s name='ButtonFacebook' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Facebook{/s}">
-				<span class="fa fa-facebook"></span>
-			</a>
-			<a href="#" data-type="twitter" rel="nofollow" class="csbuttons btn"
-                title="{s name='ButtonTwitter' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Twitter{/s}">
-				<span class="fa fa-twitter"></span>
-			</a>
-            <a href="#" data-type="google" rel="nofollow" class="csbuttons btn"
-                title="{s name='ButtonGooglePlus' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Google+{/s}">
-                <span class="fa fa-google-plus"></span>
-            </a>
-            <a href="#" data-type="linkedin" rel="nofollow" class="csbuttons btn"
-                title="{s name='ButtonLinkedIn' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}LinkedIn{/s}">
-                <span class="fa fa-linkedin"></span>
-            </a>
-            <a href="#" data-type="pinterest" rel="nofollow" class="csbuttons btn"
-                title="{s name='ButtonPinterest' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Pinterest{/s}">
-                <span class="fa fa-pinterest-p"></span>
-            </a>
-            <a href="#" data-type="whatsapp" rel="nofollow" class="btn"
-                title="{s name='ButtonWhatsApp' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}WhatsApp{/s}">
-                <span class="fa fa-whatsapp"></span>
-            </a>
-            <a href="#" data-type="email" rel="nofollow" class="btn"
-                title="{s name='ButtonEmail' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}E-Mail{/s}">
-                <span class="fa fa-envelope-o"></span>
-            </a>
-		</div>
-		<div class="advanced-share--inner-wrap">
-			{$smarty.block.parent}
-		</div>
+	<div class="advanced-share--icon-container">
+		<a href="#" data-type="facebook" rel="nofollow" class="csbuttons btn"
+            title="{s name='ButtonFacebook' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Facebook{/s}">
+			<span class="fa fa-facebook"></span>
+		</a>
+		<a href="#" data-type="twitter" rel="nofollow" class="csbuttons btn"
+            title="{s name='ButtonTwitter' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Twitter{/s}">
+			<span class="fa fa-twitter"></span>
+		</a>
+        <a href="#" data-type="google" rel="nofollow" class="csbuttons btn"
+            title="{s name='ButtonGooglePlus' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Google+{/s}">
+            <span class="fa fa-google-plus"></span>
+        </a>
+        <a href="#" data-type="linkedin" rel="nofollow" class="csbuttons btn"
+            title="{s name='ButtonLinkedIn' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}LinkedIn{/s}">
+            <span class="fa fa-linkedin"></span>
+        </a>
+        <a href="#" data-type="pinterest" rel="nofollow" class="csbuttons btn"
+            title="{s name='ButtonPinterest' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Pinterest{/s}">
+            <span class="fa fa-pinterest-p"></span>
+        </a>
+        <a href="#" data-type="whatsapp" rel="nofollow" class="btn"
+            title="{s name='ButtonWhatsApp' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}WhatsApp{/s}">
+            <span class="fa fa-whatsapp"></span>
+        </a>
+        <a href="#" data-type="email" rel="nofollow" class="btn"
+            title="{s name='ButtonEmail' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}E-Mail{/s}">
+            <span class="fa fa-envelope-o"></span>
+        </a>
+	</div>
+	<div class="advanced-share--inner-wrap">
+		{$smarty.block.parent}
 	</div>
 {/block}
 
