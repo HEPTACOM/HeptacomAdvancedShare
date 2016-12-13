@@ -4,33 +4,26 @@
 
 {block name="frontend_index_page_wrap"}
 	<div class="advanced-share--icon-container">
-		<span data-type="facebook" class="csbuttons btn"
-            title="{s name='ButtonFacebook'}Facebook{/s}">
-			<span class="fa fa-facebook"></span>
+		<span data-type="facebook" class="csbuttons btn" title="{s name='ButtonFacebook'}Facebook{/s}">
+			<i class="fa fa-facebook"></i>
 		</span>
-		<span data-type="twitter" class="csbuttons btn"
-            title="{s name='ButtonTwitter'}Twitter{/s}">
-			<span class="fa fa-twitter"></span>
+		<span data-type="twitter" class="csbuttons btn" title="{s name='ButtonTwitter'}Twitter{/s}">
+			<i class="fa fa-twitter"></i>
 		</span>
-        <span data-type="google" class="csbuttons btn"
-            title="{s name='ButtonGooglePlus'}Google+{/s}">
-            <span class="fa fa-google-plus"></span>
+        <span data-type="google" class="csbuttons btn" title="{s name='ButtonGooglePlus'}Google+{/s}">
+            <i class="fa fa-google-plus"></i>
         </span>
-        <span data-type="linkedin" class="csbuttons btn"
-            title="{s name='ButtonLinkedIn'}LinkedIn{/s}">
-            <span class="fa fa-linkedin"></span>
+        <span data-type="linkedin" class="csbuttons btn" title="{s name='ButtonLinkedIn'}LinkedIn{/s}">
+            <i class="fa fa-linkedin"></i>
         </span>
-        <span data-type="pinterest" class="csbuttons btn"
-            title="{s name='ButtonPinterest'}Pinterest{/s}">
-            <span class="fa fa-pinterest-p"></span>
+        <span data-type="pinterest" class="csbuttons btn" title="{s name='ButtonPinterest'}Pinterest{/s}">
+            <i class="fa fa-pinterest-p"></i>
         </span>
-        <span data-type="whatsapp" class="btn"
-            title="{s name='ButtonWhatsApp'}WhatsApp{/s}">
-            <span class="fa fa-whatsapp"></span>
+        <span data-type="whatsapp" class="btn" title="{s name='ButtonWhatsApp'}WhatsApp{/s}">
+            <i class="fa fa-whatsapp"></i>
         </span>
-        <span data-type="email" class="btn"
-            title="{s name='ButtonEmail'}E-Mail{/s}">
-            <span class="fa fa-envelope-o"></span>
+        <span data-type="email" class="btn" title="{s name='ButtonEmail'}E-Mail{/s}">
+            <i class="fa fa-envelope-o"></i>
         </span>
 	</div>
 	<div class="advanced-share--inner-wrap">
