@@ -5,16 +5,16 @@
   "link": "http://www.heptacom.de/",
   "author": "HEPTACOM GbR",
 
-  "description": "",
+  "description": "Advanced Share ist ein Plugin, das Share-Buttons für Social-Media revolutionär präsentiere. Das Konzept steht für sich und lässt sich in verschiedene Websites integrieren.",
 
   "currentVersion": "1.0.0",
 
   "changelog": {
-    "1.0.0": "git init"
+    "1.0.0": "Erstes Release."
   },
 
   "compatibility": {
-    "minimumVersion": "5.2.0",
+    "minimumVersion": "5.0.0",
     "maximumVersion": null,
     "blacklist": [
     ]
