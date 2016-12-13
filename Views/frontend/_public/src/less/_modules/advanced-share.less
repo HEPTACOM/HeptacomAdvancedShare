@@ -85,19 +85,21 @@
     }
   }
 
-  .advanced-share--icon-container,
-  .advanced-share--inner-wrap {
-    pointer-events: none;
-
-    & > * {
-      pointer-events: all;
-    }
-
-    .off-canvas {
+  @media (min-width: @tabletViewportWidth) {
+    .advanced-share--icon-container,
+    .advanced-share--inner-wrap {
       pointer-events: none;
 
-      &.is--open {
+      & > * {
         pointer-events: all;
+      }
+
+      .off-canvas {
+        pointer-events: none;
+
+        &.is--open {
+          pointer-events: all;
+        }
       }
     }
   }
