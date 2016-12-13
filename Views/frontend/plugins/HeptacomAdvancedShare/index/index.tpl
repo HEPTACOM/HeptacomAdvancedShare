@@ -1,33 +1,35 @@
+{namespace name="frontend/plugins/HeptacomAdvancedShare/index/index"}
+
 {block name="frontend_index_body_classes" append} advanced-share--outer-wrap{/block}
 
 {block name="frontend_index_page_wrap"}
 	<div class="advanced-share--icon-container">
 		<a href="#" data-type="facebook" rel="nofollow" class="csbuttons btn"
-            title="{s name='ButtonFacebook' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Facebook{/s}">
+            title="{s name='ButtonFacebook'}Facebook{/s}">
 			<span class="fa fa-facebook"></span>
 		</a>
 		<a href="#" data-type="twitter" rel="nofollow" class="csbuttons btn"
-            title="{s name='ButtonTwitter' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Twitter{/s}">
+            title="{s name='ButtonTwitter'}Twitter{/s}">
 			<span class="fa fa-twitter"></span>
 		</a>
         <a href="#" data-type="google" rel="nofollow" class="csbuttons btn"
-            title="{s name='ButtonGooglePlus' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Google+{/s}">
+            title="{s name='ButtonGooglePlus'}Google+{/s}">
             <span class="fa fa-google-plus"></span>
         </a>
         <a href="#" data-type="linkedin" rel="nofollow" class="csbuttons btn"
-            title="{s name='ButtonLinkedIn' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}LinkedIn{/s}">
+            title="{s name='ButtonLinkedIn'}LinkedIn{/s}">
             <span class="fa fa-linkedin"></span>
         </a>
         <a href="#" data-type="pinterest" rel="nofollow" class="csbuttons btn"
-            title="{s name='ButtonPinterest' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}Pinterest{/s}">
+            title="{s name='ButtonPinterest'}Pinterest{/s}">
             <span class="fa fa-pinterest-p"></span>
         </a>
         <a href="#" data-type="whatsapp" rel="nofollow" class="btn"
-            title="{s name='ButtonWhatsApp' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}WhatsApp{/s}">
+            title="{s name='ButtonWhatsApp'}WhatsApp{/s}">
             <span class="fa fa-whatsapp"></span>
         </a>
         <a href="#" data-type="email" rel="nofollow" class="btn"
-            title="{s name='ButtonEmail' namespace='frontend/plugins/HeptacomAdvancedShare/index/index'}E-Mail{/s}">
+            title="{s name='ButtonEmail'}E-Mail{/s}">
             <span class="fa fa-envelope-o"></span>
         </a>
 	</div>
@@ -38,7 +40,7 @@
 
 {block name='frontend_index_search' append}
 	<li class="navigation--entry entry--share" role="menuitem">
-		<a href="#" class="advanced-share--toggle-btn btn"  rel="nofollow" title="{"{s name='DetailAdvancedShare' namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}Teilen{/s}"|escape}">
+		<a href="#" class="advanced-share--toggle-btn btn"  rel="nofollow" title="{"{s name='DetailAdvancedShare'}Teilen{/s}"|escape}">
 			<i class="fa fa-share-alt"></i>
 		</a>
 	</li>
@@ -54,7 +56,7 @@
 {/block}
 
 {block name='frontend_detail_actions_review' append}
-    <a href="#" class="action--link advanced-share--toggle-btn" rel="nofollow" title="{"{s name='DetailAdvancedShare' namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}{/s}"|escape}">
-        <i class="fa fa-share-alt"></i> {s name="DetailAdvancedShare" namespace="frontend/plugins/HeptacomAdvancedShare/index/index"}{/s}
+    <a href="#" class="action--link advanced-share--toggle-btn" rel="nofollow" title="{"{s name='DetailAdvancedShare'}{/s}"|escape}">
+        <i class="fa fa-share-alt"></i> {s name="DetailAdvancedShare"}{/s}
     </a>
 {/block}
