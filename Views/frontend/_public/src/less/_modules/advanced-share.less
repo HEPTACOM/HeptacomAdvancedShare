@@ -66,6 +66,10 @@
       }
       &[data-type="whatsapp"] {
         .social-button(@social-whatsapp);
+
+        @media (min-width: @tabletViewportWidth) {
+          display: none;
+        }
       }
       &[data-type="email"] {
         .social-button(@social-email);
