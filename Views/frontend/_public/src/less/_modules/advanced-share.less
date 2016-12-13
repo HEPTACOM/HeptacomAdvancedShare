@@ -5,12 +5,13 @@
   .advanced-share--inner-wrap {
     background: @body-bg;
     overflow: hidden;
+    .box-shadow(0 0 100px -20px #000);
     transition: transform .4s ease;
     transform-origin: center top;
     transform: translateY(-80px);
     .unitize(margin-bottom, -80);
 
-    @media (min-width: @phoneLandscapeViewportWidth) {
+    @media (min-width: @tabletViewportWidth) {
       transform: translateY(-160px);
       .unitize(margin-bottom, -160);
     }
@@ -26,7 +27,7 @@
     transform: translateY(-80px);
     transition: transform .4s ease;
 
-    @media (min-width: @phoneLandscapeViewportWidth) {
+    @media (min-width: @tabletViewportWidth) {
       .unitize-padding(60, 0);
       transform: translateY(-160px);
     }
@@ -36,10 +37,10 @@
       .social-button(#444);
       .unitize-min-width(40);
       text-align: center;
-      .unitize-margin(0, 8);
+      .unitize-margin(0, 10);
       .unitize-padding(3, 0);
 
-      @media (min-width: @phoneLandscapeViewportWidth) {
+      @media (min-width: @tabletViewportWidth) {
         .unitize-margin(0, 20);
       }
 
@@ -72,13 +73,6 @@
     }
   }
 
-  &::after {
-    content: " ";
-    display: block;
-    clear: both;
-    .unitize-min-height(1);
-  }
-
   &.active {
     .advanced-share--icon-container {
       transform: translateY(0);
@@ -87,19 +81,15 @@
     .advanced-share--inner-wrap {
       transform: translateY(0);
       margin-bottom: 0;
-      .box-shadow(0 0 100px -20px #000);
 
       @media (min-width: @tabletViewportWidth) {
         transform: scale(.9) translateY(0);
-        .unitize(margin-bottom, -220);
       }
       @media (min-width: @tabletLandscapeViewportWidth) {
         transform: scale(.8) translateY(0);
-        .unitize(margin-bottom, -380);
       }
       @media (min-width: @desktopViewportWidth) {
         transform: scale(.7) translateY(0);
-        .unitize(margin-bottom, -600);
       }
     }
   }
