@@ -7,7 +7,7 @@
 		init: function() {
             var me = this;
 
-			$('.advanced-share--toggle-btn').click(function(event) {
+			$('.advanced-share--toggle-btn').on('click tap', function(event) {
                 event.preventDefault();
 
 				$('.advanced-share--outer-wrap').toggleClass('active');
@@ -16,6 +16,7 @@
 
             $('.csbuttons').cSButtons();
             me.registerWhatsapp();
+            me.registerEmail();
 		},
 
 		registerWhatsapp: function() {
@@ -25,6 +26,17 @@
                 event.preventDefault();
 
                 var shareUrl = 'whatsapp://send?text=' + me.url;
+                window.open(shareUrl, '_top');
+            });
+        },
+
+        registerEmail: function() {
+            var me = this;
+
+            $('.advanced-share--icon-container [data-type="email"]').on('click tap', function(event) {
+                event.preventDefault();
+
+                var shareUrl = 'mailto:?body=' + me.url;
                 window.open(shareUrl, '_top');
             });
         }
