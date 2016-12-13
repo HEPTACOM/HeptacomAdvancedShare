@@ -3,6 +3,7 @@
 {block name="frontend_index_body_classes" append} advanced-share--outer-wrap{/block}
 
 {block name="frontend_index_page_wrap"}
+    <div class="advanced-share--close-area"></div>
 	<div class="advanced-share--icon-container">
 		<span data-type="facebook" class="csbuttons btn" title="{s name='ButtonFacebook'}Facebook{/s}">
 			<i class="fa fa-facebook"></i>

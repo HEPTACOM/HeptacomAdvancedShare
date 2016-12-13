@@ -14,6 +14,10 @@
                 $('html, body').animate({scrollTop: 0}, 400);
 			});
 
+            $('.advanced-share--close-area').on('click tap', function() {
+                $('.advanced-share--outer-wrap').removeClass('advanced-share--open');
+            });
+
             $('.csbuttons').cSButtons();
             me.registerWhatsapp();
             me.registerEmail();

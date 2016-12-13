@@ -2,6 +2,14 @@
   background: #b5b5b5;
   .unitize-min-width(320);
 
+  .advanced-share--close-area {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
   .advanced-share--inner-wrap {
     background: @body-bg;
     overflow: hidden;
@@ -73,6 +81,23 @@
       }
       &[data-type="email"] {
         .social-button(@social-email);
+      }
+    }
+  }
+
+  .advanced-share--icon-container,
+  .advanced-share--inner-wrap {
+    pointer-events: none;
+
+    & > * {
+      pointer-events: all;
+    }
+
+    .off-canvas {
+      pointer-events: none;
+
+      &.is--open {
+        pointer-events: all;
       }
     }
   }
