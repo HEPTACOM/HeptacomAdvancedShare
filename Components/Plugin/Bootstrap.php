@@ -45,6 +45,14 @@ abstract class Shopware_Plugins_Frontend_HeptacomAdvancedShare_Components_Plugin
     }
 
     /**
+     * @return mixed|null
+     */
+    public function getVersion()
+    {
+        return $this->getPluginInfo('currentVersion');
+    }
+
+    /**
      * @return array
      */
     public function getInfo()
