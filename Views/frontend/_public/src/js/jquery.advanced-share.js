@@ -3,7 +3,8 @@
 
 	$.plugin('heptacomAdvancedShare', {
 		init: function() {
-			$('.advanced-share--toggle-btn').click(function() {
+			$('.advanced-share--toggle-btn').click(function(event) {
+                event.preventDefault();
 				$('.advanced-share--outer-wrap').toggleClass('active');
                 $('html, body').animate({scrollTop: 0}, 400);
 			});
