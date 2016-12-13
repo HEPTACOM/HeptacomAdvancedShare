@@ -10,7 +10,7 @@
 			$('.advanced-share--toggle-btn').on('click tap', function(event) {
                 event.preventDefault();
 
-				$('.advanced-share--outer-wrap').toggleClass('active');
+				$('.advanced-share--outer-wrap').toggleClass('advanced-share--open');
                 $('html, body').animate({scrollTop: 0}, 400);
 			});
 
