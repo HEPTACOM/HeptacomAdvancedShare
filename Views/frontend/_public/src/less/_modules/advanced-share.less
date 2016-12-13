@@ -8,12 +8,12 @@
     .box-shadow(0 0 100px -20px #000);
     transition: transform .4s ease;
     transform-origin: center top;
-    transform: translateY(-1px * (@adv-share-icon-height + (2 * @adv-share-icon-container-padding-phone)));
-    .unitize(margin-bottom, -1 * (@adv-share-icon-height + (2 * @adv-share-icon-container-padding-phone)));
+    transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-phone));
+    .unitize(margin-bottom, -1 * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-phone));
 
     @media (min-width: @tabletViewportWidth) {
-      transform: translateY(-1px * (@adv-share-icon-height + (2 * @adv-share-icon-container-padding-tablet)));
-      .unitize(margin-bottom, -1 * (@adv-share-icon-height + (2 * @adv-share-icon-container-padding-tablet)));
+      transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-tablet));
+      .unitize(margin-bottom, -1 * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-tablet));
     }
   }
 
@@ -24,12 +24,12 @@
     white-space: nowrap;
     .unitize-padding(@adv-share-icon-container-padding-phone, 0);
     .unitize-height(@adv-share-icon-height);
-    transform: translateY(-1px * (@adv-share-icon-height + (2 * @adv-share-icon-container-padding-phone)));
+    transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-phone));
     transition: transform .4s ease;
 
     @media (min-width: @tabletViewportWidth) {
       .unitize-padding(@adv-share-icon-container-padding-tablet, 0);
-      transform: translateY(-1px * (@adv-share-icon-height + (2 * @adv-share-icon-container-padding-tablet)));
+      transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-tablet));
     }
 
     .btn {
