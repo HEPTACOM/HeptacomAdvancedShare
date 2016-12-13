@@ -6,7 +6,7 @@ Advanced Share hat es sich zur Aufgabe gemacht, Share-Buttons für Social-Media 
 
 Konzeptionell besteht Advanced Share nur aus wenigen Richtlinien, wie es sich in eine Website integrieren soll.
 
-1. Alle Social-Optionen sind im Ausgangszstand nicht sichtbar.
+1. Alle Social-Optionen sind im Ausgangszustand nicht sichtbar.
 2. Durch einen einzigen Button werden alle Social-Optionen sichtbar (oder wenigstens erreichbar).
 3. Die Social-Optionen behindern in keinem Fall die Bedienung der übrigen Website.
 
