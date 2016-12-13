@@ -22,9 +22,7 @@
 		registerWhatsapp: function() {
             var me = this;
 
-            $('.advanced-share--icon-container [data-type="whatsapp"]').on('click tap', function(event) {
-                event.preventDefault();
-
+            $('.advanced-share--icon-container [data-type="whatsapp"]').on('click tap', function() {
                 var shareUrl = 'whatsapp://send?text=' + me.url;
                 window.open(shareUrl, '_top');
             });
@@ -33,9 +31,7 @@
         registerEmail: function() {
             var me = this;
 
-            $('.advanced-share--icon-container [data-type="email"]').on('click tap', function(event) {
-                event.preventDefault();
-
+            $('.advanced-share--icon-container [data-type="email"]').on('click tap', function() {
                 var shareUrl = 'mailto:?body=' + me.url;
                 window.open(shareUrl, '_top');
             });

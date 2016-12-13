@@ -4,34 +4,34 @@
 
 {block name="frontend_index_page_wrap"}
 	<div class="advanced-share--icon-container">
-		<a href="#" data-type="facebook" rel="nofollow" class="csbuttons btn"
+		<span data-type="facebook" class="csbuttons btn"
             title="{s name='ButtonFacebook'}Facebook{/s}">
 			<span class="fa fa-facebook"></span>
-		</a>
-		<a href="#" data-type="twitter" rel="nofollow" class="csbuttons btn"
+		</span>
+		<span data-type="twitter" class="csbuttons btn"
             title="{s name='ButtonTwitter'}Twitter{/s}">
 			<span class="fa fa-twitter"></span>
-		</a>
-        <a href="#" data-type="google" rel="nofollow" class="csbuttons btn"
+		</span>
+        <span data-type="google" class="csbuttons btn"
             title="{s name='ButtonGooglePlus'}Google+{/s}">
             <span class="fa fa-google-plus"></span>
-        </a>
-        <a href="#" data-type="linkedin" rel="nofollow" class="csbuttons btn"
+        </span>
+        <span data-type="linkedin" class="csbuttons btn"
             title="{s name='ButtonLinkedIn'}LinkedIn{/s}">
             <span class="fa fa-linkedin"></span>
-        </a>
-        <a href="#" data-type="pinterest" rel="nofollow" class="csbuttons btn"
+        </span>
+        <span data-type="pinterest" class="csbuttons btn"
             title="{s name='ButtonPinterest'}Pinterest{/s}">
             <span class="fa fa-pinterest-p"></span>
-        </a>
-        <a href="#" data-type="whatsapp" rel="nofollow" class="btn"
+        </span>
+        <span data-type="whatsapp" class="btn"
             title="{s name='ButtonWhatsApp'}WhatsApp{/s}">
             <span class="fa fa-whatsapp"></span>
-        </a>
-        <a href="#" data-type="email" rel="nofollow" class="btn"
+        </span>
+        <span data-type="email" class="btn"
             title="{s name='ButtonEmail'}E-Mail{/s}">
             <span class="fa fa-envelope-o"></span>
-        </a>
+        </span>
 	</div>
 	<div class="advanced-share--inner-wrap">
 		{$smarty.block.parent}
