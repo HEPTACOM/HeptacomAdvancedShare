@@ -50,4 +50,12 @@ class Shopware_Plugins_Frontend_HeptacomAdvancedShare_Bootstrap extends Bootstra
             ]
         ];
     }
+
+    /**
+     * @return mixed|null
+     */
+    public function getVersion()
+    {
+        return $this->getPluginInfo('currentVersion');
+    }
 }
