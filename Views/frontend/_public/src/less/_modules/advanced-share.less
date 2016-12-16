@@ -14,12 +14,18 @@
     background: @body-bg;
     overflow: hidden;
     .box-shadow(0 0 100px -20px #000);
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
     transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease;
+    -webkit-transform-origin: center top;
     transform-origin: center top;
+    -webkit-transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-phone));
     transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-phone));
     .unitize(margin-bottom, -1 * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-phone));
 
     @media (min-width: @tabletViewportWidth) {
+      -webkit-transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-tablet));
       transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-tablet));
       .unitize(margin-bottom, -1 * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-tablet));
     }
@@ -32,11 +38,16 @@
     white-space: nowrap;
     .unitize-padding(@adv-share-icon-container-padding-phone, 0);
     .unitize-height(@adv-share-icon-height);
+    -webkit-transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-phone));
     transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-phone));
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: -webkit-transform .4s ease;
     transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease;
 
     @media (min-width: @tabletViewportWidth) {
       .unitize-padding(@adv-share-icon-container-padding-tablet, 0);
+      -webkit-transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-tablet));
       transform: translateY(-1px * (@adv-share-icon-height + 2 * @adv-share-icon-container-padding-tablet));
     }
 
@@ -113,20 +124,25 @@
 
   &.advanced-share--open {
     .advanced-share--icon-container {
+      -webkit-transform: translateY(0);
       transform: translateY(0);
     }
 
     .advanced-share--inner-wrap {
+      -webkit-transform: translateY(0);
       transform: translateY(0);
       margin-bottom: 0;
 
       @media (min-width: @tabletViewportWidth) {
+        -webkit-transform: scale(.9) translateY(0);
         transform: scale(.9) translateY(0);
       }
       @media (min-width: @tabletLandscapeViewportWidth) {
+        -webkit-transform: scale(.8) translateY(0);
         transform: scale(.8) translateY(0);
       }
       @media (min-width: @desktopViewportWidth) {
+        -webkit-transform: scale(.7) translateY(0);
         transform: scale(.7) translateY(0);
       }
     }
