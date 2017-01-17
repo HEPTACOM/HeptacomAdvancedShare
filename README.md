@@ -14,4 +14,4 @@ Konzeptionell besteht Advanced Share nur aus wenigen Richtlinien, wie es sich in
 
 Die Umsetzung in diesem Plugin hält sich natürlich an die oben genannten Richtlinien. In diesem Fall wird beim Klick auf den Share-Button die Website etwas kleiner skaliert und die Social-Optionen sind außerhalb des ursprünglichen Viewports erreichbar.
 
-[hier gehts zum Shopware Plugin](http://store.shopware.com/hepta21674218489/advanced-share.html)
+[![Shopware-Icon (Blau)](https://de.shopware.com/media/image/sw-icon_blue16.png) Zum Community Store](https://store.shopware.com/hepta21674218489/advanced-share.html)
