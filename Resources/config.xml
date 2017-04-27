@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.2/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+        <element required="true" type="boolean" scope="shop">
+            <name>facebook</name>
+            <label lang="de">Facebook</label>
+            <label lang="en">Facebook</label>
+            <value>1</value>
+        </element>
+        <element required="true" type="boolean" scope="shop">
+            <name>twitter</name>
+            <label lang="de">Twitter</label>
+            <label lang="en">Twitter</label>
+            <value>1</value>
+        </element>
+        <element required="true" type="boolean" scope="shop">
+            <name>googleplus</name>
+            <label lang="de">Google+</label>
+            <label lang="en">Google+</label>
+            <value>1</value>
+        </element>
+        <element required="true" type="boolean" scope="shop">
+            <name>linkedin</name>
+            <label lang="de">LinkedIn</label>
+            <label lang="en">LinkedIn</label>
+            <value>1</value>
+        </element>
+        <element required="true" type="boolean" scope="shop">
+            <name>pinterest</name>
+            <label lang="de">Pinterest</label>
+            <label lang="en">Pinterest</label>
+            <value>1</value>
+        </element>
+        <element required="true" type="boolean" scope="shop">
+            <name>whatsapp</name>
+            <label lang="de">WhatsApp</label>
+            <label lang="en">WhatsApp</label>
+            <value>1</value>
+        </element>
+        <element required="true" type="boolean" scope="shop">
+            <name>email</name>
+            <label lang="de">E-Mail</label>
+            <label lang="en">E-Mail</label>
+            <value>1</value>
+        </element>
+    </elements>
+</config>

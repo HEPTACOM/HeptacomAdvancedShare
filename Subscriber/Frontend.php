@@ -5,6 +5,7 @@ namespace HeptacomAdvancedShare\Subscriber;
 use Enlight\Event\SubscriberInterface;
 use Enlight_Event_EventArgs;
 use Enlight_Controller_Action;
+use Shopware\Components\Plugin\ConfigReader;
 use Shopware\Components\Theme\LessDefinition;
 use Doctrine\Common\Collections\ArrayCollection;
 
@@ -36,6 +37,11 @@ class Frontend implements SubscriberInterface
         $view = $controller->View();
 
         $view->addTemplateDir(implode(DIRECTORY_SEPARATOR, [__DIR__, '..', 'Resources', 'views']));
+
+        /** @var ConfigReader $configReader */
+        $configReader = Shopware()->Container()->get('shopware.plugin.config_reader');
+        $config = ['channels' => $configReader->getByPluginName('HeptacomAdvancedShare')];
+        $view->assign('heptacomAdvancedShare', $config);
 
         $view->extendsTemplate(implode(DIRECTORY_SEPARATOR, [
             'frontend',
