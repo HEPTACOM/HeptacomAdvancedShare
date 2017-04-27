@@ -1,5 +1,5 @@
 [submodule "Views/frontend/_public/vendors/js/jquery.csbuttons"]
-	path = Resources/views/frontend/_public/vendors/js/jquery.csbuttons.js
+	path = Resources/views/frontend/_public/vendors/js/jquery.csbuttons
 	url = https://github.com/AcrowFR/csbuttons
 [submodule "Views/frontend/_public/vendors/less/Font-Awesome"]
 	path = Resources/views/frontend/_public/vendors/less/Font-Awesome
