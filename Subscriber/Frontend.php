@@ -31,7 +31,7 @@ class Frontend implements SubscriberInterface
         $controller = $args->get('subject');
         $view = $controller->View();
 
-        $view->addTemplateDir(implode(DIRECTORY_SEPARATOR, [__DIR__, '..', 'Views']));
+        $view->addTemplateDir(implode(DIRECTORY_SEPARATOR, [__DIR__, '..', 'Resources', 'views']));
 
         $view->extendsTemplate(implode(DIRECTORY_SEPARATOR, [
             'frontend',
@@ -51,7 +51,8 @@ class Frontend implements SubscriberInterface
         $vendorFontAwesome = new LessDefinition([], [implode(DIRECTORY_SEPARATOR, [
             __DIR__,
             '..',
-            'Views',
+            'Resources',
+            'views',
             'frontend',
             '_public',
             'vendors',
@@ -64,7 +65,8 @@ class Frontend implements SubscriberInterface
         $less = new LessDefinition([], [implode(DIRECTORY_SEPARATOR, [
             __DIR__,
             '..',
-            'Views',
+            'Resources',
+            'views',
             'frontend',
             '_public',
             'src',
@@ -83,10 +85,10 @@ class Frontend implements SubscriberInterface
     {
         return new ArrayCollection([
             implode(DIRECTORY_SEPARATOR, [
-                __DIR__, '..', 'Views', 'frontend', '_public', 'vendors', 'js', 'jquery.csbuttons', 'jquery.csbuttons.js'
+                __DIR__, '..', 'Resources', 'views', 'frontend', '_public', 'vendors', 'js', 'jquery.csbuttons', 'jquery.csbuttons.js'
             ]),
             implode(DIRECTORY_SEPARATOR, [
-                __DIR__, '..', 'Views', 'frontend', '_public', 'src', 'js', 'jquery.advanced-share.js'
+                __DIR__, '..', 'Resources', 'views', 'frontend', '_public', 'src', 'js', 'jquery.advanced-share.js'
             ])
         ]);
     }
