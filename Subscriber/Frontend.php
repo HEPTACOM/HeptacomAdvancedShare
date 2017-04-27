@@ -27,7 +27,7 @@ class Frontend implements SubscriberInterface
      */
     public function onFrontendPostDispatch(Enlight_Event_EventArgs $args)
     {
-        /** @var Enlight_Controller_Action */
+        /** @var Enlight_Controller_Action $controller */
         $controller = $args->get('subject');
         $view = $controller->View();
 
