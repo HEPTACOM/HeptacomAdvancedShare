@@ -1,6 +1,6 @@
 <?php
 
-namespace Shopware\HeptacomAdvancedShare\Subscriber;
+namespace HeptacomAdvancedShare\Subscriber;
 
 use Enlight\Event\SubscriberInterface;
 use Enlight_Event_EventArgs;
@@ -8,6 +8,10 @@ use Enlight_Controller_Action;
 use Shopware\Components\Theme\LessDefinition;
 use Doctrine\Common\Collections\ArrayCollection;
 
+/**
+ * Class Frontend
+ * @package HeptacomAdvancedShare\Subscriber
+ */
 class Frontend implements SubscriberInterface
 {
 	/**
