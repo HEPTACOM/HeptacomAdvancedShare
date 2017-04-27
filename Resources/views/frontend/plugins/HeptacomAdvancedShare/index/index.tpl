@@ -1,6 +1,6 @@
 {namespace name="frontend/plugins/HeptacomAdvancedShare/index/index"}
 
-{block name="frontend_index_body_classes" append} advanced-share--outer-wrap{/block}
+{block name="frontend_index_body_classes"}{$smarty.block.parent} advanced-share--outer-wrap{/block}
 
 {block name="frontend_index_page_wrap"}
     <div class="advanced-share--close-area"></div>
@@ -46,7 +46,9 @@
 	</div>
 {/block}
 
-{block name='frontend_index_search' append}
+{block name='frontend_index_search'}
+    {$smarty.block.parent}
+
 	<li class="navigation--entry entry--share" role="menuitem">
 		<a href="#" class="advanced-share--toggle-btn btn"  rel="nofollow" title="{"{s name='DetailAdvancedShare'}Teilen{/s}"|escape}">
 			<i class="fa fa-share-alt"></i>
@@ -63,7 +65,9 @@
     </li>
 {/block}
 
-{block name='frontend_detail_actions_review' append}
+{block name='frontend_detail_actions_review'}
+    {$smarty.block.parent}
+
     <a href="#" class="action--link advanced-share--toggle-btn" rel="nofollow" title="{"{s name='DetailAdvancedShare'}{/s}"|escape}">
         <i class="fa fa-share-alt"></i> {s name="DetailAdvancedShare"}{/s}
     </a>
