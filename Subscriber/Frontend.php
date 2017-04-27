@@ -40,7 +40,15 @@ class Frontend implements SubscriberInterface
 
         /** @var ConfigReader $configReader */
         $configReader = Shopware()->Container()->get('shopware.plugin.config_reader');
-        $config = ['channels' => $configReader->getByPluginName('HeptacomAdvancedShare')];
+
+        $channels = $configReader->getByPluginName('HeptacomAdvancedShare');
+        $inactive = empty(array_filter($channels, 'boolval'));
+
+        if ($inactive) {
+            return;
+        }
+
+        $config = ['channels' => $channels];
         $view->assign('heptacomAdvancedShare', $config);
 
         $view->extendsTemplate(implode(DIRECTORY_SEPARATOR, [

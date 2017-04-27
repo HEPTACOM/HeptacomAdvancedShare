@@ -5,27 +5,41 @@
 {block name="frontend_index_page_wrap"}
     <div class="advanced-share--close-area"></div>
 	<div class="advanced-share--icon-container">
-		<span data-type="facebook" class="csbuttons btn" title="{s name='ButtonFacebook'}Facebook{/s}">
-			<i class="fa fa-facebook"></i>
-		</span>
-		<span data-type="twitter" class="csbuttons btn" title="{s name='ButtonTwitter'}Twitter{/s}">
-			<i class="fa fa-twitter"></i>
-		</span>
-        <span data-type="google" class="csbuttons btn" title="{s name='ButtonGooglePlus'}Google+{/s}">
-            <i class="fa fa-google-plus"></i>
-        </span>
-        <span data-type="linkedin" class="csbuttons btn" title="{s name='ButtonLinkedIn'}LinkedIn{/s}">
-            <i class="fa fa-linkedin"></i>
-        </span>
-        <span data-type="pinterest" class="csbuttons btn" title="{s name='ButtonPinterest'}Pinterest{/s}">
-            <i class="fa fa-pinterest-p"></i>
-        </span>
-        <span data-type="whatsapp" class="btn" title="{s name='ButtonWhatsApp'}WhatsApp{/s}">
-            <i class="fa fa-whatsapp"></i>
-        </span>
-        <span data-type="email" class="btn" title="{s name='ButtonEmail'}E-Mail{/s}">
-            <i class="fa fa-envelope-o"></i>
-        </span>
+        {if $heptacomAdvancedShare.channels.facebook}
+            <span data-type="facebook" class="csbuttons btn" title="{s name='ButtonFacebook'}Facebook{/s}">
+                <i class="fa fa-facebook"></i>
+            </span>
+        {/if}
+        {if $heptacomAdvancedShare.channels.twitter}
+            <span data-type="twitter" class="csbuttons btn" title="{s name='ButtonTwitter'}Twitter{/s}">
+                <i class="fa fa-twitter"></i>
+            </span>
+        {/if}
+        {if $heptacomAdvancedShare.channels.googleplus}
+            <span data-type="google" class="csbuttons btn" title="{s name='ButtonGooglePlus'}Google+{/s}">
+                <i class="fa fa-google-plus"></i>
+            </span>
+        {/if}
+        {if $heptacomAdvancedShare.channels.linkedin}
+            <span data-type="linkedin" class="csbuttons btn" title="{s name='ButtonLinkedIn'}LinkedIn{/s}">
+                <i class="fa fa-linkedin"></i>
+            </span>
+        {/if}
+        {if $heptacomAdvancedShare.channels.pinterest}
+            <span data-type="pinterest" class="csbuttons btn" title="{s name='ButtonPinterest'}Pinterest{/s}">
+                <i class="fa fa-pinterest-p"></i>
+            </span>
+        {/if}
+        {if $heptacomAdvancedShare.channels.whatsapp}
+            <span data-type="whatsapp" class="btn" title="{s name='ButtonWhatsApp'}WhatsApp{/s}">
+                <i class="fa fa-whatsapp"></i>
+            </span>
+        {/if}
+        {if $heptacomAdvancedShare.channels.email}
+            <span data-type="email" class="btn" title="{s name='ButtonEmail'}E-Mail{/s}">
+                <i class="fa fa-envelope-o"></i>
+            </span>
+        {/if}
 	</div>
 	<div class="advanced-share--inner-wrap">
 		{$smarty.block.parent}
