@@ -4,10 +4,10 @@
     <label lang="de">Advanced Share</label>
     <label lang="en">Advanced Share</label>
 
-    <version>2.0.0</version>
+    <version>2.1.0</version>
     <license>proprietary</license>
-    <link>http://www.heptacom.de/</link>
-    <author>HEPTACOM</author>
+    <link>http://www.ksk-agentur.de/</link>
+    <author>KSK-Agentur</author>
     <compatibility minVersion="5.2.0" />
 
     <description>
@@ -30,5 +30,9 @@
     <changelog version="2.0.0">
         <changes lang="de">Neue Plugin-Struktur</changes>
         <changes lang="en">New plugin structure</changes>
+    </changelog>
+    <changelog version="2.1.0">
+        <changes lang="de">Einzelne Kanäle ausblenden</changes>
+        <changes lang="en">Hide individual channels</changes>
     </changelog>
 </plugin>
