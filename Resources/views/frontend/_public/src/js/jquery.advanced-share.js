@@ -7,6 +7,8 @@
 		init: function() {
             var me = this;
 
+            window.Overlay.prototype.defaults.renderElement = '.advanced-share--inner-wrap';
+
 			$('.advanced-share--toggle-btn').on('click tap', function(event) {
                 event.preventDefault();
 
@@ -44,7 +46,6 @@
 
 	window.StateManager.addPlugin('.advanced-share--outer-wrap', 'heptacomAdvancedShare');
 
-	$('.js--overlay').appendTo('.advanced-share--inner-wrap');
 	$.subscribe('plugin/swAjaxVariant/onRequestData', function () {
         window.StateManager.addPlugin('.advanced-share--outer-wrap', 'heptacomAdvancedShare');
     });
