@@ -45,5 +45,8 @@
 	window.StateManager.addPlugin('.advanced-share--outer-wrap', 'heptacomAdvancedShare');
 
 	$('.js--overlay').appendTo('.advanced-share--inner-wrap');
+	$.subscribe('plugin/swAjaxVariant/onRequestData', function () {
+        window.StateManager.addPlugin('.advanced-share--outer-wrap', 'heptacomAdvancedShare');
+    });
 
 })(jQuery, window);
